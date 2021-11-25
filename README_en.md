@@ -1,7 +1,7 @@
 # gitblog
 This is a very small personal blog template bsaed on git issues for anyone who wants to build a personal blog on GitHub pages.
 
-[Demo page](https://imuncle.github.io/gitblog)
+[Demo page](https://Mying666.github.io/gitblog)
 
 [中文](README.md)
 
@@ -25,7 +25,7 @@ You can set labels for each article in Github issues page.
 You can **Fork** or **clone** this repo. Then you can customize by yourself.
 
 ### Get Github OAuth APP
-Click [here](https://github.com/settings/applications/new) to get a Github OAuth APP. Be sure that the **callback URL** is your own home website, such as 'https://imuncle.github.io' .
+Click [here](https://github.com/settings/applications/new) to get a Github OAuth APP. Be sure that the **callback URL** is your own home website, such as 'https://Mying666.github.io' .
 
 You'll get **client_id** and **client_secret** finally.
 
@@ -42,20 +42,20 @@ In **config.json**:
     "instruction": "add your instruction",
     "server_link": "http://119.23.8.25/gh-oauth-server.php",
     "filter": {
-        "creator": "all",	//@param: "all" or a username(eg. "imuncle")
+        "creator": "all",	//@param: "all" or a username(eg. "Mying666")
         "state": "open"		//@param: "open", "close", "all"
     },
     "menu": {
         //add your menu items and URL here
 		//example:
 		//"Home" : "./",
-        //"RSS" : "https://rsshub.app/github/issue/imuncle/imuncle.github.io",
+        //"RSS" : "https://rsshub.app/github/issue/Mying666/Mying666.github.io",
         //"About me" : "content.html?id=41"
     },
     "friends": {
         //add your friends link here
         //example:
-        //imuncle : "https://imuncle.github.io"
+        //Mying666 : "https://Mying666.github.io"
     },
     "icons": {
         //add your footer icons here
@@ -70,7 +70,7 @@ In **config.json**:
         //example :
         //"Github" : {
         //    "icon_src" : "images/github.svg",
-        //    "href" : "https://github.com/imuncle",
+        //    "href" : "https://github.com/Mying666",
         //    "hidden_img" : null,
         //    'width" : 0
         //}
@@ -93,12 +93,12 @@ menu|Fill in the names and links in the menu on the right
 friends|Fill in the friendship chain of your website (optional)
 icons|Fill in the informations of the icons that you want to show at the bottom (optional)
 
-The server_link above is the address of the server, because the access_token of the accessing user must be accessed through the server. Details can be found in [this article] (https://imuncle.github.io/content.html?id=22). This server is written in PHP and is only responsible for requesting the user's access_token and does not store any data. See the [source code](https://github.com/imuncle/gitblog/blob/master/server/gh-oauth-server.php).
+The server_link above is the address of the server, because the access_token of the accessing user must be accessed through the server. Details can be found in [this article] (https://Mying666.github.io/content.html?id=22). This server is written in PHP and is only responsible for requesting the user's access_token and does not store any data. See the [source code](https://github.com/Mying666/gitblog/blob/master/server/gh-oauth-server.php).
 
 If you have a server, you can use the PHP code to configure the server yourself and write **server_link** as your server address.
 
 ### Dynamic typing
-You can see a dynamic typing effect in the home page in [demo page](https://imuncle.github.io). This is references by [type.js](https://github.com/mattboldt/typed.js). You can config it in **index.html**:
+You can see a dynamic typing effect in the home page in [demo page](https://Mying666.github.io). This is references by [type.js](https://github.com/mattboldt/typed.js). You can config it in **index.html**:
 
 ```javascript
 $("#changerificwordspanid").typed({
@@ -116,7 +116,7 @@ By changing the `strings`, you can make your own dynamic typing. For more inform
 All the images are stored in **images** folder. You can change them at will.
 
 ## API
-The details of implementing can be found in [api.html](https://github.com/imuncle/gitblog/blob/master/api.html).
+The details of implementing can be found in [api.html](https://github.com/Mying666/gitblog/blob/master/api.html).
 
 ### Get menu lists
 ```javascript
@@ -169,7 +169,7 @@ The format of json are as follows:
 	},
 	{
 		"name": "灵感想法",
-		"url": "https://imuncle.github.io/timeline"
+		"url": "https://Mying666.github.io/timeline"
 	},
 	{
 		"name": "关于我",
@@ -208,7 +208,7 @@ The format of json are as follows:
 			"id": 48,
 			"time": "2019/4/7 23:00:49",
 			"title": "STM32 flash读写",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -220,7 +220,7 @@ The format of json are as follows:
 			"id": 47,
 			"time": "2019/4/5 01:58:44",
 			"title": "WS2811驱动",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -232,7 +232,7 @@ The format of json are as follows:
 			"id": 46,
 			"time": "2019/4/1 18:57:58",
 			"title": "DS18B20温度传感器数据读取",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -244,7 +244,7 @@ The format of json are as follows:
 			"id": 45,
 			"time": "2019/4/1 18:01:15",
 			"title": "HAL库实现us级延时",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -256,7 +256,7 @@ The format of json are as follows:
 			"id": 44,
 			"time": "2019/4/1 10:00:40",
 			"title": "MPU9250六轴算法",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -268,7 +268,7 @@ The format of json are as follows:
 			"id": 43,
 			"time": "2019/3/30 09:19:57",
 			"title": "MATLAB串口通信GUI程序",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -280,7 +280,7 @@ The format of json are as follows:
 			"id": 42,
 			"time": "2019/3/24 12:01:25",
 			"title": "网站搜索功能",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -292,7 +292,7 @@ The format of json are as follows:
 			"id": 40,
 			"time": "2019/3/19 15:19:52",
 			"title": "RM2018的奋斗",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略... ",
 			"labels": [
 				{
@@ -304,7 +304,7 @@ The format of json are as follows:
 			"id": 39,
 			"time": "2019/3/18 18:03:35",
 			"title": "MPU9250姿态解析",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -316,7 +316,7 @@ The format of json are as follows:
 			"id": 38,
 			"time": "2019/3/10 19:03:28",
 			"title": "生成漂亮的代码分享图",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{

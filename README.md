@@ -1,7 +1,7 @@
 # gitblog
 这是一个极轻量级的，基于git issue的个人博客模板，非常适合于想在GitHub pages上搭建个人博客的人。
 
-[示例页面](https://imuncle.github.io/gitblog)
+[示例页面](https://Mying666.github.io/gitblog)
 
 [English](README_en.md)
 
@@ -21,7 +21,7 @@
 
 可以在GitHub上为每个文章指定标签label。
 
-404页面模仿了GitHub自己的404页面，可点击[这里](https://imuncle.github.io/anything)查看404页面示例。
+404页面模仿了GitHub自己的404页面，可点击[这里](https://Mying666.github.io/anything)查看404页面示例。
 
 ## 如何开始
 
@@ -31,13 +31,13 @@
 第二种办法就是clone仓库
 
 ```git
-git clone "https:/github.com/imuncle/gitblog"
+git clone "https:/github.com/Mying666/gitblog"
 ```
 
 ### 申请GitHub OAuth APP
 点击[这里](https://github.com/settings/applications/new)申请。
 
-注意申请时的**callback URL**一定要填写正确。一般就写自己网站的首页就行，比如https://imuncle.github.io 。
+注意申请时的**callback URL**一定要填写正确。一般就写自己网站的首页就行，比如https://Mying666.github.io 。
 
 申请完毕后会拿到对应的唯一的**client_id**和**client_secret**，这两个字符串在后面的配置中会使用到。
 
@@ -54,20 +54,20 @@ git clone "https:/github.com/imuncle/gitblog"
     "instruction": "add your instruction",
     "server_link": "http://119.23.8.25/gh-oauth-server.php",
     "filter": {
-        "creator": "all",	//@param: "all" or a username(eg. "imuncle")
+        "creator": "all",	//@param: "all" or a username(eg. "Mying666")
         "state": "open"		//@param: "open", "close", "all"
     },
     "menu": {
         //add your menu items and URL here
         //example:
         //"Home" : "./",
-        //"RSS" : "https://rsshub.app/github/issue/imuncle/imuncle.github.io",
+        //"RSS" : "https://rsshub.app/github/issue/Mying666/Mying666.github.io",
         //"About me" : "content.html?id=41"
     },
     "friends": {
         //add your friends link here
         //example:
-        //imuncle : "https://imuncle.github.io"
+        //Mying666 : "https://Mying666.github.io"
     },
     "icons": {
         //add your footer icons here
@@ -82,7 +82,7 @@ git clone "https:/github.com/imuncle/gitblog"
         //example :
         //"Github" : {
         //    "icon_src" : "images/github.svg",
-        //    "href" : "https://github.com/imuncle",
+        //    "href" : "https://github.com/Mying666",
         //    "hidden_img" : null,
         //    'width" : 0
         //}
@@ -105,7 +105,7 @@ menu|填写右侧菜单中的名称和链接
 friends|填写你的网站的友链，若没有则不填写
 icons|填写网站页脚的图标信息，若没有则不填写
 
-上面的server_link是服务端的地址，，因为访问用户的access_token必须通过服务端访问，详情可见[这篇文章](https://imuncle.github.io/content.html?id=22)。这个服务端使用PHP编写，只负责请求用户的access_token，不会存储任何数据。详见[源代码](https://github.com/imuncle/gitblog/blob/master/server/gh-oauth-server.php)。
+上面的server_link是服务端的地址，，因为访问用户的access_token必须通过服务端访问，详情可见[这篇文章](https://Mying666.github.io/content.html?id=22)。这个服务端使用PHP编写，只负责请求用户的access_token，不会存储任何数据。详见[源代码](https://github.com/Mying666/gitblog/blob/master/server/gh-oauth-server.php)。
 
 如果你有服务器，那么你可以使用该PHP代码自己配置服务端，将**server_link**写为自己的服务端地址。
 
@@ -143,7 +143,7 @@ totop.png|右下角“回到顶部”按钮图标
 如果没有前端知识，建议更改图片时不要更改文件名。
 
 ## API接口
-API接口的实现见[api.html](https://github.com/imuncle/gitblog/blob/master/api.html)，通过访问该文件获取信息，使用url参数指定获取的信息内容。具体的用法如下。
+API接口的实现见[api.html](https://github.com/Mying666/gitblog/blob/master/api.html)，通过访问该文件获取信息，使用url参数指定获取的信息内容。具体的用法如下。
 
 ### 获取菜单信息
 ```javascript
@@ -196,7 +196,7 @@ $.ajax({
 	},
 	{
 		"name": "灵感想法",
-		"url": "https://imuncle.github.io/timeline"
+		"url": "https://Mying666.github.io/timeline"
 	},
 	{
 		"name": "关于我",
@@ -235,7 +235,7 @@ $.ajax({
 			"id": 48,
 			"time": "2019/4/7 23:00:49",
 			"title": "STM32 flash读写",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -247,7 +247,7 @@ $.ajax({
 			"id": 47,
 			"time": "2019/4/5 01:58:44",
 			"title": "WS2811驱动",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -259,7 +259,7 @@ $.ajax({
 			"id": 46,
 			"time": "2019/4/1 18:57:58",
 			"title": "DS18B20温度传感器数据读取",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -271,7 +271,7 @@ $.ajax({
 			"id": 45,
 			"time": "2019/4/1 18:01:15",
 			"title": "HAL库实现us级延时",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -283,7 +283,7 @@ $.ajax({
 			"id": 44,
 			"time": "2019/4/1 10:00:40",
 			"title": "MPU9250六轴算法",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -295,7 +295,7 @@ $.ajax({
 			"id": 43,
 			"time": "2019/3/30 09:19:57",
 			"title": "MATLAB串口通信GUI程序",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -307,7 +307,7 @@ $.ajax({
 			"id": 42,
 			"time": "2019/3/24 12:01:25",
 			"title": "网站搜索功能",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -319,7 +319,7 @@ $.ajax({
 			"id": 40,
 			"time": "2019/3/19 15:19:52",
 			"title": "RM2018的奋斗",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略... ",
 			"labels": [
 				{
@@ -331,7 +331,7 @@ $.ajax({
 			"id": 39,
 			"time": "2019/3/18 18:03:35",
 			"title": "MPU9250姿态解析",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
@@ -343,7 +343,7 @@ $.ajax({
 			"id": 38,
 			"time": "2019/3/10 19:03:28",
 			"title": "生成漂亮的代码分享图",
-			"author": "imuncle",
+			"author": "Mying666",
 			"content": "文章内容太多了，此处省略...",
 			"labels": [
 				{
